@@ -1,34 +1,115 @@
-/*div p{
-    color: brown;
-}
-*/
-/*.container div p{
-    color: brown;
-}*/
+/* div p{
+    color: red;
+} */
+
+/* .container div p{
+    color: red;
+} */
+
 p + div {
-  color: aqua;
+  color: magenta; /*p'den hemen sonra gelen div*/
 }
+
 div + p {
-  background-color: magenta;
+  background-color: aqua; /*div'den hemen sonra gelen p*/
 }
+
 div > p {
   background-color: orange;
 }
+
 div > span {
-  background-color: lavender;
+  background-color: blueviolet;
 }
-h2 [title="baslik1"] {
+
+h2[title="baslik1"] {
   color: red;
 }
-h2 [title="baslik2"] {
-  color: rgb(0, 34, 128);
+h2[title="baslik2"] {
+  color: blue;
 }
+
 p[title="paragraf1"] {
-  color: chocolate;
+  color: crimson;
 }
 p[title="paragraf2"] {
-  color: rgb(14, 146, 128);
+  color: rgb(6, 162, 16);
 }
-p[title="paragraf1"] ::first-letter {
+
+a[target="_blank"] {
+  font-size: 2rem;
+  text-decoration: none;
+  color: deeppink;
+}
+
+p[title="paragraf2"]::first-line {
+  font-size: 25px;
+}
+p[title="paragraf2"]::first-letter {
   font-size: 50px;
+  background-color: red;
+}
+/*  */
+/* ul li { */
+/* background-color: olive; */
+/* width: 20rem; */
+/* margin: 1rem; */
+/* border-radius: 10px; */
+/* } */
+/*  */
+/* ul li::before { */
+/* content: "❤️"; */
+/* font-size: 2rem; */
+/* } */
+/*  */
+/* ul li::after { */
+/* content: "🐇"; */
+/* font-size: 3rem; */
+/* } */
+/* ul li:hover { */
+/* background-color: coral; */
+/* } */
+p + h1 {
+  border: 1px solid purple;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 3.5rem;
+  box-sizing: border-box;
+  margin: 3rem;
+}
+p + h1:hover {
+  outline: 3px dashed purple;
+  cursor: pointer;
+  outline-offset: 3px;
+}
+h3 + h1 {
+  border: 1px solid purple;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 3.5rem;
+  box-sizing: border-box;
+  margin: 3rem;
+}
+h3 + h1:hover {
+  outline: 3px dashed purple;
+  cursor: pointer;
+  outline-offset: 3px;
+}
+p ~ h3 {
+  border: 5px solid red;
+  width: 20 rem;
+  font-size: 3rem;
+  text-align: center;
+  margin: auto;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 2rem;
+  outline: 10px inset purple;
+  outline-offset: 0.5rem;
+  background-color: orange;
 }
